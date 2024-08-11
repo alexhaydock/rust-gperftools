@@ -1,0 +1,3 @@
+[requires]
+build = ["gperftools-devel"]
+lib = ["gperftools-devel"]

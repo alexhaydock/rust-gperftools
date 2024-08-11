@@ -14,6 +14,7 @@ URL:            https://crates.io/crates/gperftools
 Source:         %{crates_source}
 
 BuildRequires:  cargo-rpm-macros >= 24
+BuildRequires:  gperftools-devel
 
 %global _description %{expand:
 Bindings to google's gperftools.}
@@ -23,6 +24,7 @@ Bindings to google's gperftools.}
 %package        devel
 Summary:        %{summary}
 BuildArch:      noarch
+Requires:       gperftools-devel
 
 %description    devel %{_description}
 
